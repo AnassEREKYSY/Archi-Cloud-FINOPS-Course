@@ -1,0 +1,41 @@
+{
+    "rules": [
+      {
+        "name": "move-to-cool",
+        "enabled": true,
+        "type": "Lifecycle",
+        "definition": {
+          "filters": {
+            "blobTypes": ["blockBlob"],
+            "prefixMatch": [""]
+          },
+          "actions": {
+            "baseBlob": {
+              "tierToCool": {
+                "daysAfterModificationGreaterThan": 30
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "delete-blobs",
+        "enabled": true,
+        "type": "Lifecycle",
+        "definition": {
+          "filters": {
+            "blobTypes": ["blockBlob"],
+            "prefixMatch": [""]
+          },
+          "actions": {
+            "baseBlob": {
+              "delete": {
+                "daysAfterModificationGreaterThan": 365
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+  
