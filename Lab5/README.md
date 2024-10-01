@@ -23,8 +23,7 @@
 3. **Enable Azure Services Access**:
    - Ensure the option **Allow Azure services and resources to access this server** is set to **Yes** if you want to allow other Azure resources to connect.
 
-
-   - still working on it 
+**Note:** still working on it.
 
 ### 3. Import Data into the Database
 1. **Connect to Azure SQL Database via Azure CLI**:
@@ -36,7 +35,7 @@
     sqlcmd -S serverlab5.database.windows.net -U anass -P Azerty12345@+ -d lab5-DB -i PATH/data.sql
 
 
- - still working on it 
+**Note:** still working on it.
 
 ### 4. Implement Geo-replication for High Availability
 
@@ -48,4 +47,4 @@
     ```bash
     az sql db replica list-links --resource-group <ResourceGroupName> --server <ServerName> --name <DatabaseName>
 
- - still working on it 
+**Note:** still working on it.
