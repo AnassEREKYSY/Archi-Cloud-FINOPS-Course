@@ -19,7 +19,9 @@
 
 ### 3. Install Software (Docker)
 
-1. execute this commande : sudo apt install docker.io -y
+1. execute this commande : 
+    ```bash
+    sudo apt install docker.io -y
 ![Software Installation](./installingDocker.png) 
 
 ### 4. Take SnapShot
@@ -30,6 +32,4 @@
     Name: Provide a name for the snapshot.
     Storage Type: Choose between Standard or Premium storage.
 4. Click Create to save the snapshot. This snapshot will capture the state of your VM, allowing you to restore it later if needed.
-
-
 ![Snapshot](./CreationSnapshot.png) 
