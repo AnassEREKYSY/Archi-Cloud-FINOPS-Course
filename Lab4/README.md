@@ -6,7 +6,7 @@
 
 1. **Create a Storage Account:**
    - Click on **Create a resource** > **Storage** > **Storage account**.
-    [Storage Account Creation](./creatingstorage.png)
+    ![Storage Account Creation](./creatingstorage.png)
 
 ## **Step 2: Upload and Manage Blobs Using Azure Portal**
 
@@ -16,7 +16,7 @@
 2. **Create a Blob Container:**
 
 3. **Upload a Blob:**
-   [Upload Files](./uploadingfilestocontainer.png)
+   ![Upload Files](./uploadingfilestocontainer.png)
 
 ## **Step 3: Set Up Shared Access Signatures (SAS) for Secure Access**
 
@@ -25,7 +25,7 @@
    - Set the required permissions (e.g., Read, Write, List).
    - Set the expiry date/time for the SAS token.
    - Click **Generate SAS and connection string**.
-    [Genereting SAS Token](./sassetup.png)
+    ![Genereting SAS Token](./sassetup.png)
 
 
 ## **Step 4: Implement Lifecycle Management Policies Using Azure CLI**
