@@ -1,0 +1,17 @@
+{
+    "bindings": [
+        {
+            "type": "httpTrigger",
+            "direction": "in",
+            "authLevel": "anonymous",
+            "methods": ["get", "post"]
+        },
+        {
+            "type": "blob",
+            "direction": "out",
+            "name": "outputBlob",
+            "path": "my-container/{rand-guid}.txt",
+            "connection": "AzureWebJobsStorage"
+        }
+    ]
+}
