@@ -1,1 +1,0 @@
-# Archi-Cloud-FINOPS-Course
