@@ -190,6 +190,48 @@
 
     curl -X DELETE https://myfunctionappanass.azurewebsites.net/api/userapi?id=1
 
+## Install Azure Functions Tools on Linux OS :
+
+1. Create a Linux VM
+2. SSH into the Linux VM :
+    ```bash 
+    ssh <username>@<ip_address>   // ssh azureuser@4.178.137.34
+3. Install Azure Functions Core Tools
+    ```bash 
+    # Update and upgrade the system
+    sudo apt-get update -y
+    sudo apt-get upgrade -y
+
+    # Install Microsoft packages
+    wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+    sudo dpkg -i packages-microsoft-prod.deb
+    sudo apt-get update
+
+    # Install required packages
+    sudo apt-get install apt-transport-https -y
+    sudo apt-get install dotnet-sdk-2.1 -y
+    sudo apt-get install azure-functions-core-tools -y
+
+4. Test Azure Functions Core Tools Installation
+    ```bash 
+    func --version
+5. Create the Azure Functions Project :
+    ```bash 
+    func init MyFunctionProj --dotnet
+6. Create the Azure Function :
+    ```bash 
+    cd MyFunctionProj
+    func new
+7. Run the Function App :
+    ```bash 
+    func start
+8.  Invoke the Function :
+    ```bash 
+    curl -X POST "http://localhost:7071/api/UserApi" -H "Content-Type: application/json" -d '{"id": "1", "name": "John Doe"}'
+
+
+
+
 
 
 
